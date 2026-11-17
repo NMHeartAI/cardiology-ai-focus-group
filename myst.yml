@@ -6,6 +6,9 @@ project:
   # Marp decks are built into slides/ before the book (see build.sh) and served as-is.
   static_files:
     - slides
+  plugins:
+    - type: javascript
+      path: plugins/base-url.mjs
   toc:
     - file: index.md
     - title: Meetings
