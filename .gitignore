@@ -12,3 +12,5 @@
 !/marp/
 /marp/*.html
 !/rose-pine-moon.css
+!/images/
+.DS_Store
