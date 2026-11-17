@@ -4,5 +4,10 @@
 !/.github/
 !/README.md
 !/build.sh
-!/focus-group.md
+!/build-site.sh
+!/myst.yml
+!/index.md
+!/meetings/
+!/marp/
+/marp/*.html
 !/rose-pine-moon.css

@@ -1,0 +1,17 @@
+version: 1
+project:
+  title: Cardiology in AI Focus Group
+  description: Meeting notes and slides for the Cardiology in AI focus group.
+  github: https://github.com/NMHeartAI/cardiology-ai-focus-group
+  # Marp decks are built into slides/ before the book (see build.sh) and served as-is.
+  static_files:
+    - slides
+  toc:
+    - file: index.md
+    - title: Meetings
+      children:
+        - file: meetings/2026-11-17.md
+site:
+  template: book-theme
+  options:
+    folders: true
