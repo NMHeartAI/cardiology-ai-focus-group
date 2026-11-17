@@ -6,6 +6,7 @@
 !/build.sh
 !/build-site.sh
 !/myst.yml
+!/plugins/
 !/index.md
 !/meetings/
 !/marp/
