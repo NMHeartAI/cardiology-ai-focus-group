@@ -26,12 +26,16 @@ Meeting notes and slides for the Cardiology in AI focus group, published as a
 ## Preview locally
 
 ```sh
-pip install jupyter-book   # or: uv tool install jupyter-book
-./build-site.sh
-jupyter-book start
+uv tool install jupyter-book==2.1.7   # once
+./build-site.sh                        # build the slides into slides/
+jupyter-book start                     # serve the book at http://localhost:3000
 ```
 
-The meeting pages embed the slides from the live site, so the preview shows the deployed slides,
-not local edits. To check local slide edits, open `slides/YYYY-MM-DD.html` directly.
+Book pages reload as you save. After editing a deck in `marp/`, run `./build-site.sh` again (the
+server can keep running) and reload the browser page.
+
+Meeting pages embed slides with a site-root path (`/slides/YYYY-MM-DD.html`), so the preview shows
+your local slides. `plugins/base-url.mjs` adds the repository's base path to that address when the
+deploy workflow sets `BASE_URL`.
 
 `.gitignore` ignores everything by default; add a file to its allow-list before committing it.
