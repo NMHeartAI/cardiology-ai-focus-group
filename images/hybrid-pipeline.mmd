@@ -1,6 +1,6 @@
 flowchart LR
   P["0 · Prepare once<br/>patient facts +<br/>computable criteria"] --> F["1 · Pre-filter<br/>rules on hard<br/>criteria"]
-  F -->|short list| A["2 · Assess<br/>one v2-style<br/>call per pair"]
+  F -->|short list| A["2 · Assess<br/>decision model,<br/>TrialGPT 2.0 if unsure"]
   A --> G["3 · Guardrail<br/>coded exclusions<br/>cap the fit score"]
   G --> R["4 · Review<br/>coordinator"]
   R -.->|labels and corrections| P
