@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" font-family="Inter, -apple-system, 'Helvetica Neue', Arial, sans-serif">
+  <rect width="1280" height="720" fill="#232136"/>
+
+  <!-- title -->
+  <text x="64" y="84" font-size="36" font-weight="700" fill="#ea9a97">TrialGPT 2.0: Deployment at Northwestern</text>
+  <rect x="984" y="56" width="232" height="36" rx="18" fill="#2a273f" stroke="#c4a7e7" stroke-width="1.5"/>
+  <text x="1100" y="80" font-size="16" font-weight="600" fill="#c4a7e7" text-anchor="middle">With the NLM TrialGPT team</text>
+
+  <!-- banner -->
+  <rect x="64" y="112" width="1152" height="52" fill="#2a273f"/>
+  <rect x="64" y="112" width="6" height="52" fill="#f6c177"/>
+  <text x="88" y="145" font-size="19" fill="#e0def4"><tspan font-weight="700">Recommendation, not just eligibility:</tspan> research coordinators review ranked suggestions instead of manual chart review and search</text>
+
+  <!-- column labels -->
+  <g font-size="14" font-weight="700" fill="#f6c177" letter-spacing="2">
+    <text x="64" y="204">1 · INPUTS</text>
+    <text x="332" y="204">2 · ASSESS · ONE CALL PER TRIAL</text>
+    <text x="788" y="204">3 · RANK</text>
+  </g>
+
+  <!-- column 1: inputs -->
+  <rect x="64" y="220" width="240" height="196" rx="10" fill="#2a273f" stroke="#44415a"/>
+  <text x="84" y="252" font-size="17" font-weight="700" fill="#c4a7e7">Patient record</text>
+  <g font-size="17" fill="#e0def4">
+    <text x="84" y="288">67-year-old with HFrEF.</text>
+    <text x="84" y="316">Echo shows LVEF 30%.</text>
+    <text x="84" y="344">On sacubitril/valsartan.</text>
+    <text x="84" y="372">eGFR 58.</text>
+  </g>
+
+  <rect x="64" y="432" width="240" height="208" rx="10" fill="#2a273f" stroke="#44415a"/>
+  <text x="84" y="464" font-size="17" font-weight="700" fill="#c4a7e7">Site trial list + policy</text>
+  <g font-size="15" fill="#e0def4">
+    <text x="84" y="496">Our open cardiology trials</text>
+    <text x="84" y="530" fill="#908caa">Retrieval (BM25 + MedCPT)</text>
+    <text x="84" y="550" fill="#908caa">only for lists over 1,500</text>
+    <text x="84" y="584">Policy in plain language,</text>
+    <text x="84" y="604">e.g. prefer therapeutic</text>
+    <text x="84" y="624">heart-failure trials</text>
+  </g>
+
+  <text x="318" y="440" font-size="34" fill="#908caa" text-anchor="middle">›</text>
+
+  <!-- column 2: assess -->
+  <rect x="332" y="220" width="428" height="420" rx="10" fill="#2a273f" stroke="#44415a"/>
+  <text x="352" y="252" font-size="17" font-weight="700" fill="#c4a7e7">Heart failure trial A</text>
+  <rect x="604" y="233" width="140" height="28" rx="14" fill="#393552"/>
+  <text x="674" y="252" font-size="15" font-weight="700" fill="#f6c177" text-anchor="middle">Fit 94 · conf. 0.80</text>
+  <text x="352" y="282" font-size="15" fill="#908caa">Category: <tspan fill="#f6c177" font-weight="700">Highly Recommended</tspan></text>
+
+  <g font-size="13" font-weight="700" letter-spacing="1.5">
+    <text x="352" y="318" fill="#9ccfd8">ELIGIBLE REASONS</text>
+    <text x="352" y="418" fill="#ea9a97">INELIGIBLE REASONS</text>
+    <text x="352" y="472" fill="#c4a7e7">MISSING INFORMATION</text>
+    <text x="352" y="548" fill="#908caa">RATIONALE</text>
+  </g>
+  <g font-size="15" fill="#e0def4">
+    <text x="352" y="342">• LVEF ≤ 35% <tspan fill="#908caa" font-style="italic">“LVEF 30%”</tspan></text>
+    <text x="352" y="366">• Guideline therapy <tspan fill="#908caa" font-style="italic">“sacubitril/valsartan”</tspan></text>
+    <text x="352" y="390">• Not excluded by eGFR &lt; 30 <tspan fill="#908caa" font-style="italic">“eGFR 58”</tspan></text>
+    <text x="352" y="442">• None found</text>
+    <text x="352" y="496">• HF admission in last 30 days: not documented</text>
+    <text x="364" y="518" fill="#908caa">→ lowers confidence, not the fit score</text>
+    <text x="352" y="572">Fits the trial's HFrEF population on current</text>
+    <text x="352" y="594">therapy; confirm recent admissions at screening.</text>
+  </g>
+  <text x="352" y="626" font-size="13" font-style="italic" fill="#908caa">Criteria weighed together, not labelled one by one</text>
+
+  <text x="774" y="440" font-size="34" fill="#908caa" text-anchor="middle">›</text>
+
+  <!-- column 3: rank -->
+  <rect x="788" y="220" width="212" height="420" rx="10" fill="#2a273f" stroke="#44415a"/>
+  <g font-size="16">
+    <text x="806" y="258" fill="#e0def4" font-weight="700">1  Trial A</text>
+    <text x="982" y="258" fill="#f6c177" font-weight="700" text-anchor="end">94</text>
+    <rect x="806" y="268" width="176" height="10" rx="5" fill="#393552"/>
+    <rect x="806" y="268" width="165" height="10" rx="5" fill="#f6c177"/>
+    <text x="806" y="298" font-size="13" fill="#f6c177">Highly Recommended</text>
+
+    <text x="806" y="344" fill="#e0def4" font-weight="700">2  Trial B</text>
+    <text x="982" y="344" fill="#9ccfd8" font-weight="700" text-anchor="end">84</text>
+    <rect x="806" y="354" width="176" height="10" rx="5" fill="#393552"/>
+    <rect x="806" y="354" width="148" height="10" rx="5" fill="#9ccfd8"/>
+    <text x="806" y="384" font-size="13" fill="#9ccfd8">Possible Match</text>
+
+    <text x="806" y="430" fill="#908caa" font-weight="700">3  Trial C</text>
+    <text x="982" y="430" fill="#908caa" font-weight="700" text-anchor="end">62</text>
+    <rect x="806" y="440" width="176" height="10" rx="5" fill="#393552"/>
+    <rect x="806" y="440" width="109" height="10" rx="5" fill="#6e6a86"/>
+    <text x="806" y="470" font-size="13" fill="#908caa">Low Fit</text>
+  </g>
+  <g font-size="13" fill="#908caa" font-style="italic">
+    <text x="806" y="530">Sorted by fit score;</text>
+    <text x="806" y="548">confidence breaks ties.</text>
+    <text x="806" y="580">&gt;90 Highly Recommended</text>
+    <text x="806" y="598">80–90 Possible Match</text>
+    <text x="806" y="616">&lt;80 Low Fit</text>
+  </g>
+
+  <!-- results -->
+  <rect x="1024" y="196" width="192" height="444" rx="10" fill="#2a273f" stroke="#c4a7e7" stroke-width="1.5"/>
+  <text x="1042" y="228" font-size="17" font-weight="700" fill="#c4a7e7">TrialGPT 2.0 results</text>
+  <g fill="#e0def4">
+    <text x="1042" y="282" font-size="40" font-weight="800" fill="#f6c177">~91%</text>
+    <text x="1042" y="306" font-size="14">of 288 cases: a clinician-</text>
+    <text x="1042" y="324" font-size="14">recommended trial in</text>
+    <text x="1042" y="342" font-size="14">the top 10</text>
+
+    <line x1="1042" y1="362" x2="1198" y2="362" stroke="#44415a"/>
+    <text x="1042" y="408" font-size="40" font-weight="800" fill="#f6c177">55%</text>
+    <text x="1042" y="432" font-size="14">less screening time</text>
+    <text x="1042" y="450" font-size="14">(NCI cohort)</text>
+
+    <line x1="1042" y1="470" x2="1198" y2="470" stroke="#44415a"/>
+    <text x="1042" y="516" font-size="40" font-weight="800" fill="#f6c177">11 → 21</text>
+    <text x="1042" y="540" font-size="14">tumor-board cases of 27</text>
+    <text x="1042" y="558" font-size="14">with a recommended</text>
+    <text x="1042" y="576" font-size="14">trial, prospective</text>
+  </g>
+  <text x="1042" y="620" font-size="12" font-style="italic" fill="#908caa">Mostly oncology settings</text>
+
+  <!-- footer -->
+  <text x="64" y="684" font-size="13" fill="#6e6a86">Fang et al. 2026, arXiv:2609.01202 · Patient, trials and scores are illustrative</text>
+</svg>
