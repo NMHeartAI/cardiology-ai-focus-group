@@ -14,7 +14,7 @@ project:
     - file: index.md
     - title: Meetings
       children:
-        - file: meetings/2026-11-17.md
+        - file: meetings/2026-11-19.md
 site:
   template: book-theme
   options:
