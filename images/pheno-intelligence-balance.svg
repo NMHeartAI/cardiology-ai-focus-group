@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 495" width="720" height="495" font-family="Inter, -apple-system, 'Helvetica Neue', Arial, sans-serif">
+  <!-- grid -->
+  <g fill="none" stroke="#44415a" stroke-width="1.5">
+    <polygon points="360,192.5 397.5,230 360,267.5 322.5,230"/>
+    <polygon points="360,155 435,230 360,305 285,230"/>
+    <polygon points="360,117.5 472.5,230 360,342.5 247.5,230"/>
+    <polygon points="360,80 510,230 360,380 210,230" stroke="#6e6a86"/>
+    <line x1="360" y1="80" x2="360" y2="380"/>
+    <line x1="210" y1="230" x2="510" y2="230"/>
+  </g>
+
+  <!-- rules / classic NLP -->
+  <polygon points="360,162.5 495,230 360,372.5 225,230" fill="#c4a7e7" fill-opacity="0.08" stroke="#c4a7e7" stroke-width="3" stroke-dasharray="8 6"/>
+  <!-- frontier LLM on every note -->
+  <polygon points="360,87.5 397.5,230 360,282.5 315,230" fill="#ea9a97" fill-opacity="0.08" stroke="#ea9a97" stroke-width="3" stroke-dasharray="8 6"/>
+  <!-- Pheno-Intelligence target -->
+  <polygon points="360,102.5 480,230 360,365 240,230" fill="#f6c177" fill-opacity="0.22" stroke="#f6c177" stroke-width="4" stroke-linejoin="round"/>
+  <g fill="#f6c177">
+    <circle cx="360" cy="102.5" r="6"/>
+    <circle cx="480" cy="230" r="6"/>
+    <circle cx="360" cy="365" r="6"/>
+    <circle cx="240" cy="230" r="6"/>
+  </g>
+
+  <!-- axis labels -->
+  <g fill="#e0def4" font-size="28" font-weight="700">
+    <text x="360" y="62" text-anchor="middle">Accuracy</text>
+    <text x="360" y="418" text-anchor="middle">Reproducibility</text>
+    <text x="524" y="232" text-anchor="start">Cost</text>
+    <text x="196" y="232" text-anchor="end">Latency</text>
+  </g>
+  <g fill="#908caa" font-size="18">
+    <text x="524" y="256" text-anchor="start">outer = cheaper</text>
+    <text x="196" y="256" text-anchor="end">outer = faster</text>
+  </g>
+
+  <!-- legend -->
+  <g font-size="22" fill="#e0def4">
+    <line x1="20" y1="473" x2="54" y2="473" stroke="#ea9a97" stroke-width="3.5" stroke-dasharray="8 5"/>
+    <text x="62" y="480">Frontier LLM</text>
+    <line x1="218" y1="473" x2="252" y2="473" stroke="#c4a7e7" stroke-width="3.5" stroke-dasharray="8 5"/>
+    <text x="260" y="480">Rules / classic NLP</text>
+    <rect x="474" y="463" width="34" height="20" rx="3" fill="#f6c177" fill-opacity="0.22" stroke="#f6c177" stroke-width="3"/>
+    <text x="516" y="480" font-weight="700">Pheno-Intelligence</text>
+  </g>
+</svg>
