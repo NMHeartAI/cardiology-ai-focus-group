@@ -1,0 +1,14 @@
+flowchart LR
+  P["0 · Prepare once<br/>patient facts +<br/>computable criteria"] --> F["1 · Pre-filter<br/>rules on hard<br/>criteria"]
+  F -->|short list| A["2 · Assess<br/>one v2-style<br/>call per pair"]
+  A --> G["3 · Guardrail<br/>coded exclusions<br/>cap the fit score"]
+  G --> R["4 · Review<br/>coordinator"]
+  R -.->|labels and corrections| P
+  classDef src stroke:#c4a7e7,stroke-width:2px
+  classDef rule stroke:#9ccfd8,stroke-width:2px
+  classDef llm stroke:#f6c177,stroke-width:2px
+  classDef human stroke:#ea9a97,stroke-width:2px
+  class P src
+  class F,G rule
+  class A llm
+  class R human
